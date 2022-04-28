@@ -11,12 +11,12 @@ nodes:
 
     selinuxRelabel: false
 
-    propagation: Bidirectional
-  - hostPath: /var/log/containers
-    containerPath: /var/log/containers
+    propagation: HostToContainer
+  - hostPath: /var/log
+    containerPath: /var/log
 
     readOnly: false
 
     selinuxRelabel: false
 
-    propagation: Bidirectional
+    propagation: HostToContainer
