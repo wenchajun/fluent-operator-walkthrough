@@ -14,8 +14,8 @@ if [[ "${INSTALL_KIND:-no}" == "yes" ]]; then
 fi
 
 # Delete the old cluster (if it exists)
-kind delete cluster --name="${CLUSTER_NAME}" -f cluster.yaml
+kind delete cluster --name="${CLUSTER_NAME}"
 
-kind create cluster --name="${CLUSTER_NAME}" 
+kind create cluster --name="${CLUSTER_NAME}"  --config=cluster.yaml
 
 echo "Cluster created successfully"

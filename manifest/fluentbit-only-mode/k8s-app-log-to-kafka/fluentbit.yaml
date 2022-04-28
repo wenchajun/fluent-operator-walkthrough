@@ -7,6 +7,7 @@ metadata:
     app.kubernetes.io/name: fluent-bit
 spec:
   image: kubesphere/fluent-bit:v1.8.11
+  containerLogRealPath: /var/lib/docker/containers
   positionDB:
     hostPath:
       path: /var/lib/fluent-bit/
