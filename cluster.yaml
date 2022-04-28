@@ -7,16 +7,16 @@ nodes:
   - hostPath: /var/lib/docker/containers
     containerPath: /var/lib/docker/containers
 
-    readOnly: true
+    readOnly: false
 
     selinuxRelabel: false
 
-    propagation: HostToContainer
+    propagation: Bidirectional
   - hostPath: /var/log/containers
     containerPath: /var/log/containers
 
-    readOnly: true
+    readOnly: false
 
     selinuxRelabel: false
 
-    propagation: HostToContainer
+    propagation: Bidirectional
