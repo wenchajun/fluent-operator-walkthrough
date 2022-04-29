@@ -6,7 +6,7 @@ metadata:
     fluentbit.fluent.io/enabled: "true"
     fluentbit.fluent.io/mode: "k8s"
 spec:
-  matchRegex: (?:kube|service)\.(.*)
+  matchRegex: my_dummy
   kafka:
     brokers: my-cluster-kafka-bootstrap.kafka.svc:9091,my-cluster-kafka-bootstrap.kafka.svc:9092,my-cluster-kafka-bootstrap.kafka.svc:9093
     topics: fluent-log

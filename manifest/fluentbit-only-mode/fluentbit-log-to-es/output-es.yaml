@@ -6,7 +6,7 @@ metadata:
     fluentbit.fluent.io/enabled: "true"
     fluentbit.fluent.io/mode: "fluentbit-only"
 spec:
-  matchRegex: (?:kube|service)\.(.*)
+  matchRegex: my_dummy
   es:
     host: elasticsearch-master.elastic.svc
     port: 9200

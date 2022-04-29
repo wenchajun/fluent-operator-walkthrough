@@ -11,10 +11,6 @@ spec:
     matchLabels:
       fluentbit.fluent.io/enabled: "true"
       fluentbit.fluent.io/mode: "k8s"
-  filterSelector:
-    matchLabels:
-      fluentbit.fluent.io/enabled: "true"
-      fluentbit.fluent.io/mode: "k8s"
   outputSelector:
     matchLabels:
       fluentbit.fluent.io/enabled: "true"

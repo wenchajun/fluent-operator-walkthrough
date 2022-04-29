@@ -6,10 +6,7 @@ metadata:
     fluentbit.fluent.io/enabled: "true"
     fluentbit.fluent.io/mode: "fluentbit-only"
 spec:
-  systemd:
-    tag: service.kubelet
-    path: /var/log/journal
-    db: /fluent-bit/tail/kubelet.db
-    dbSync: Normal
-    systemdFilter:
-      - _SYSTEMD_UNIT=kubelet.service
+  dummy:
+    rate: 1 #Events number generated per second
+    tag: my_dummy
+    dummy: {"message":"fluent-operator walkthrough"}
